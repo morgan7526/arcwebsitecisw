@@ -8,7 +8,7 @@
 
       Red Ball Pizza Survey Form
       Author: Anna-Lena Morgan 
-      Date:   11/10/2026
+      Date:   11/19/2026
 
       Filename:   rb_survey.html
 
@@ -21,7 +21,6 @@
    <link href="rb_styles.css" rel="stylesheet" />
    <link href="rb_forms.css" rel="stylesheet" />
    <script src="rb_formsubmit.js"> </script>
-
 </head>
 
 <body>
@@ -86,7 +85,7 @@
 			<div class="formRow">
 				<label for="phone">Phone number</label>
 				<input name="custPhone" id="phone" type="tel" placeholder="(nnn)nnn-nnnn" 
-				pattern="^\d{10}$|^(d*)?\d{3}[\s\-]?\d{4}$" />
+				pattern="^\d{10}$|^(\d3\s*)?\d{3}[\s\-]?\d{4}$"/>
 			</div>
 			
 			<div class="formRow">
@@ -105,15 +104,15 @@
 			</div>
 			
 			<div class="formRow">
-				<label for="dish">Wha's your favorite dish?</label>
+				<label for="dish">What's your favorite dish?</label>
 				<input name="favDish" id="dish" type="text" list="dishType"/>
 				<datalist id="dishType">
 					<option value="Anitpasto Pizza"> 
 					<option value="Big Kahuna Pizza"> 
 					<option value="BBQ Chicken Pizza"> 
-					<option value="Mediterranean Pizza">  
+					<option value="Mediterranean Herb Pizza">  
 					<option value="Pasta Rolls"> 
-					<<option value="Pasto Artichoke Pizza">
+					<option value="Pasto Artichoke Pizza">
 				</datalist>					
 			</div>
 			
@@ -123,7 +122,7 @@
 				value="1" step="1" min="0" max="20" />
 			</div>
 			
-			<input name="mailMe" id="mailCB" calue="yes" type="checkbox" />
+			<input name="mailMe" id="mailCB" value="yes" type="checkbox" />
 			<label for="mailCB">Add me to your mailining list for great coupons and specials!</lable>
 			
 	 </fieldset>
@@ -142,7 +141,7 @@
 			<option value="order1">Carry out</option>
 			<option value="order2">Delivery</option>
 			<option value="order3" selected>Dine in</option>
-			<option value="order4">Take 'n Bake</option>
+			<option value="order4">Take 'n bake</option>
 			</select>
 		</div>
 		
@@ -191,7 +190,7 @@
 			</div>
 			
 		<label for="commBox">Tell us more about your experience!</label>
-		<textarea name="custExp" id=:commBox"></textarea>
+		<textarea name="custExp" id="commBox"></textarea>
 		
 	</fieldset>	
 		<div id="buttons">
